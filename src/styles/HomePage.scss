@@ -1,0 +1,36 @@
+@import './variables'; 
+@import './mixins';  
+
+.homepage {
+  padding: 20px;
+  background-color: grey;
+
+  .container {
+    @include flex-center;
+    flex-wrap: wrap;
+  }
+
+  .row {
+    margin: 0 -15px;
+
+    .col-sm-12 {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .row {
+      .col-md-6 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .row {
+      .col-lg-4 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
